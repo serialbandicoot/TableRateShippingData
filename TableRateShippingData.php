@@ -6,7 +6,11 @@
 /*
 Plugin Name: TableRateShippingData
 Plugin URI: https://github.com/serialbandicoot/TableRateShippingData
+<<<<<<< HEAD
 Description: Table Rate Shipping returned in a GET request
+=======
+Description: This is my first attempt to create a cutom plugin
+>>>>>>> 03fe3bb8cd775a673f377fb19c2cfa50c737ef8c
 Version: 1.0.0
 Author: @serialbandicoot
 Author URI: https://github.com/serialbandicoot/TableRateShippingData
@@ -20,7 +24,11 @@ class TableRateShippingData
 {
 
 	function __construct(){
+<<<<<<< HEAD
 		add_action( 'rest_api_init', array( $this , 'activate_table_rate_shipping_data' ) );
+=======
+		add_action( 'init', array( $this , 'get_table_rate_shipping_data' ) );
+>>>>>>> 03fe3bb8cd775a673f377fb19c2cfa50c737ef8c
 	}
 
 	function activate(){
@@ -32,6 +40,7 @@ class TableRateShippingData
 		flush_rewrite_rules();
 	}
 
+<<<<<<< HEAD
 	/*
 		URL: http://lhost/wp-json/shipping/v1/table_rate_data
 	*/
@@ -101,6 +110,10 @@ class TableRateShippingData
 
 	 
 		return $shipping_methods;
+=======
+	function get_table_rate_shipping_data(){
+		//Location to 
+>>>>>>> 03fe3bb8cd775a673f377fb19c2cfa50c737ef8c
 	}
 }
 
